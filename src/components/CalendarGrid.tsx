@@ -86,7 +86,7 @@ export function CalendarGrid({
       >
         <div className="grid grid-cols-7 flex-1 gap-y-2 md:gap-y-4 auto-rows-min" role="row">
           {dates.map((date) => (
-            <motion.div key={date.toISOString()} variants={itemVariants} className="flex h-full w-full">
+            <motion.div key={date.toISOString()} className="flex h-full w-full">
               <DateCell
                 date={date}
                 currentMonth={currentMonth}
