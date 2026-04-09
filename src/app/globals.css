@@ -1,22 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f1f5f9; /* Slate 100 as wall */
+  --foreground: #334155; /* Slate 700 */
+  --custom-brand: #1e92d0;
+  --custom-brand-light: #e6f4fc;
 }
 
 @theme inline {
+  --color-brand: var(--custom-brand);
+  --color-brand-light: var(--custom-brand-light);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
