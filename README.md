@@ -1,15 +1,15 @@
-# 🗓️ Premium Dynamic Wall Calendar
+# Premium Dynamic Wall Calendar
 
 A production-grade, highly interactive calendar application designed to replicate the beautiful aesthetics and functionality of a physical wall calendar. It features dynamic real-time color extraction, buttery smooth 3D page flip animations, and a rich, fully memoized interactive date selection UI.
 
 ## ✨ Core Functionalities
 
-*   **🎨 Dynamic Theme Engine**: Every month fetches a unique hero image. The app automatically scans the image matrix in real-time using `fast-average-color`, extracting the dominant hex code to dynamically re-theme the entire application (glassmorphism accents, selection UI, texts).
-*   **📐 3D Perspective Flips**: Month-to-month transitions leverage Framer Motion to execute a highly realistic, anchored `rotateX` 3D page turn, mimicking physically flipping through a real wall calendar.
-*   **🖱️ Animated Range Selection**: Instead of static blocks, dragging your mouse across dates triggers continuous, fluid `scaleX` Framer Motion animations that effortlessly bridge date connectors together.
-*   **📝 Context-Aware Notes & Holidays**: A premium textured side-panel automatically cross-references your selected dates against a local holiday dictionary. If a holiday matches, it injects a beautiful banner above your personal `localStorage` saved notes.
-*   **⚡ Zero-Waste Memoization**: Solved standard React "map" lag. Granular comparative configurations inside a custom `React.memo` hook strictly prevent the 42-cell grid from indiscriminately re-rendering during rapid hover iterations.
-*   **♿ Enterprise Accessibility**: Every date cell acts as a strict W3C `<button role="gridcell">` allowing for pure `TAB` key navigation and JAWS/Voiceover screen reader compatibility.
+*   **Dynamic Theme Engine**: Every month fetches a unique hero image. The app automatically scans the image matrix in real-time using `fast-average-color`, extracting the dominant hex code to dynamically re-theme the entire application (glassmorphism accents, selection UI, texts).
+*   **3D Perspective Flips**: Month-to-month transitions leverage Framer Motion to execute a highly realistic, anchored `rotateX` 3D page turn, mimicking physically flipping through a real wall calendar.
+*   **Animated Range Selection**: Instead of static blocks, dragging your mouse across dates triggers continuous, fluid `scaleX` Framer Motion animations that effortlessly bridge date connectors together.
+*   **Context-Aware Notes & Holidays**: A premium textured side-panel automatically cross-references your selected dates against a local holiday dictionary. If a holiday matches, it injects a beautiful banner above your personal `localStorage` saved notes.
+*   **Zero-Waste Memoization**: Solved standard React "map" lag. Granular comparative configurations inside a custom `React.memo` hook strictly prevent the 42-cell grid from indiscriminately re-rendering during rapid hover iterations.
+*   **Enterprise Accessibility**: Every date cell acts as a strict W3C `<button role="gridcell">` allowing for pure `TAB` key navigation and JAWS/Voiceover screen reader compatibility.
 
 ## 🛠️ Tech Stack
 
